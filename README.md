@@ -48,7 +48,7 @@ The optimized model was saved and exported to an HDF5 file named "AlphabetSoupCh
 * Data Augmentation: If applicable, consider data augmentation techniques to increase the diversity and size of the training dataset. Data augmentation can help improve model robustness and generalization by introducing variations in the training data.
 
 ## Summary
-Overall, the deep learning model showed promising results in predicting the success of applicants funded by Alphabet Soup. However, achieving the target model performance may require further experimentation and optimization of hyperparameters. The current model achieved an accuracy of 73.01%, meeting the target threshold. Further optimization could involve fine-tuning hyperparameters, exploring different model architectures, and experimenting with feature engineering techniques.
+Overall, the deep learning model showed promising results in predicting the success of applicants funded by Alphabet Soup. However, achieving the target model performance may require further experimentation and optimization of hyperparameters. The current model achieved an accuracy of 73.01%. Further optimization could involve fine-tuning hyperparameters, exploring different model architectures, and experimenting with feature engineering techniques.
 
 In conclusion, while the deep learning model shows promise, continued refinement and experimentation are recommended to improve performance further. Additionally, exploring alternative models and methodologies could provide additional insights and potentially improve model performance for predicting the success of funded applicants.
 
