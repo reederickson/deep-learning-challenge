@@ -25,9 +25,13 @@ The purpose of this analysis is to address the needs of the nonprofit foundation
 
 
 ### Steps Taken to Increase Performance:
-* Feature engineering: Experiment with creating new features based on existing ones.
-* Hyperparameter tuning: Adjust the number of neurons, layers, learning rate, and other hyperparameters to optimize performance.
-* Model architecture: Experiment with different architectures, such as adding dropout layers or changing the number of layers, to improve performance.
+To improve the accuracy of the neural network model above 75%, I implemented the following three optimization methods seen in AlphabetSoupCharity_Optimization.ipynb:
+
+* Hyperparameter Tuning: Adjusting the learning rate, batch size, and optimizer algorithm to find the optimal configuration for training the neural network.
+* Regularization: Implementing dropout regularization to prevent overfitting and improve model generalization.
+* Ensemble Learning: Utilizing ensemble learning by training multiple neural network models with different initializations or architectures and combining their predictions to enhance overall performance.
+By implementing these optimization methods, we aim to achieve an accuracy above 75%. Each method contributes to improving the model's performance by addressing different aspects such as hyperparameter tuning, regularization, and leveraging ensemble learning techniques.
+-- I ran out of RAM on google collab and was unable to run and test these adjustments
 
 ### Recommendations to Increase Performance
 * Further Hyperparameter Tuning: Experiment with different hyperparameter configurations, such as learning rate, batch size, and optimizer algorithms, to optimize model performance further. Fine-tuning these parameters could potentially lead to improvements in accuracy and loss metrics.
