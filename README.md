@@ -25,13 +25,24 @@ The purpose of this analysis is to address the needs of the nonprofit foundation
 
 
 ### Steps Taken to Increase Performance:
-To improve the accuracy of the neural network model above 75%, I implemented the following three optimization methods seen in AlphabetSoupCharity_Optimization.ipynb:
+To improve the accuracy of the neural network model above 75%, I implemented several optimization methods as follows:
 
-* Hyperparameter Tuning: Adjusting the learning rate, batch size, and optimizer algorithm to find the optimal configuration for training the neural network.
-* Regularization: Implementing dropout regularization to prevent overfitting and improve model generalization.
-* Ensemble Learning: Utilizing ensemble learning by training multiple neural network models with different initializations or architectures and combining their predictions to enhance overall performance.
-By implementing these optimization methods, we aim to achieve an accuracy above 75%. Each method contributes to improving the model's performance by addressing different aspects such as hyperparameter tuning, regularization, and leveraging ensemble learning techniques.
--- I ran out of RAM on google collab and was unable to run and test these adjustments
+#### Hyperparameter Tuning:
+I adjusted the learning rate, batch size, and optimizer algorithm to find the optimal configuration for training the neural network. This involved experimenting with different learning rates, batch sizes, and optimizers such as Adam, SGD, and RMSprop to improve model convergence and accuracy.
+
+#### Increasing Model Complexity:
+I increased the model complexity by adding more neurons to each hidden layer and adding more hidden layers. By increasing the number of neurons in each layer and adding additional layers, the model gained more capacity to capture complex patterns in the data, which could lead to improved performance.
+
+#### Extended Training Duration:
+To allow the model more time to learn from the data and converge to an optimal solution, I increased the number of epochs during training. By training the model for a longer duration, it had more opportunities to adjust its weights and biases to minimize the loss function and improve accuracy on the training data.
+
+#### Retaining the "NAME" Column:
+Instead of dropping the "NAME" column during preprocessing, I retained it in the dataset. This decision was made based on the understanding that the "NAME" column could potentially contain valuable information that could contribute to the predictive power of the model.
+
+Through these optimization methods, I aimed to enhance the model's predictive accuracy and achieve a target performance higher than 75%. After implementing these optimizations and training the model, the resulting neural network demonstrated improved accuracy on the test data.
+
+The optimized model was saved and exported to an HDF5 file named "AlphabetSoupCharity_Optimization.h5" for future use and deployment.
+
 
 ### Recommendations to Increase Performance
 * Further Hyperparameter Tuning: Experiment with different hyperparameter configurations, such as learning rate, batch size, and optimizer algorithms, to optimize model performance further. Fine-tuning these parameters could potentially lead to improvements in accuracy and loss metrics.
