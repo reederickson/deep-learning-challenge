@@ -11,7 +11,6 @@ The purpose of this analysis is to address the needs of the nonprofit foundation
 * Variable to Remove: The variables EIN and NAME are identification columns and should be removed from the input data as they are neither targets nor features.
 
 ## Compiling, Training, and Evaluating the Model
-
 ### Neurons, Layers, and Activation Functions:
 * The neural network model consists of multiple dense layers with varying numbers of neurons.
 * ReLU activation function is used for the hidden layers to introduce non-linearity.
@@ -22,13 +21,13 @@ The purpose of this analysis is to address the needs of the nonprofit foundation
 * The target model performance was to achieve an accuracy higher than 75%.
 * The model achieved a loss value of 0.5600 and an accuracy of 73.01%.
 * While the accuracy meets the target performance criterion, further optimization may be possible.
-
+* These results are saved to AlphabetSoupCharity.h5
 
 ### Steps Taken to Increase Performance:
 To improve the accuracy of the neural network model above 75%, I implemented several optimization methods as follows:
 
 #### Hyperparameter Tuning:
-I adjusted the learning rate, batch size, and optimizer algorithm to find the optimal configuration for training the neural network. This involved experimenting with different learning rates, batch sizes, and optimizers such as Adam, SGD, and RMSprop to improve model convergence and accuracy.
+I adjusted the learning rate, batch size, and optimizer algorithm to find the optimal configuration for training the neural network. This involved experimenting with different learning rates, batch sizes to improve model convergence and accuracy.
 
 #### Increasing Model Complexity:
 I increased the model complexity by adding more neurons to each hidden layer and adding more hidden layers. By increasing the number of neurons in each layer and adding additional layers, the model gained more capacity to capture complex patterns in the data, which could lead to improved performance.
@@ -39,7 +38,7 @@ To allow the model more time to learn from the data and converge to an optimal s
 #### Retaining the "NAME" Column:
 Instead of dropping the "NAME" column during preprocessing, I retained it in the dataset. This decision was made based on the understanding that the "NAME" column could potentially contain valuable information that could contribute to the predictive power of the model.
 
-Through these optimization methods, I aimed to enhance the model's predictive accuracy and achieve a target performance higher than 75%. After implementing these optimizations and training the model, the resulting neural network demonstrated improved accuracy on the test data.
+Through these optimization methods, I aimed to enhance the model's predictive accuracy and achieve a target performance higher than 75%. After implementing these optimizations and training the model, the resulting neural network demonstrated improved accuracy on the test data. (hopefully; see limitations below)
 
 The optimized model was saved and exported to an HDF5 file named "AlphabetSoupCharity_Optimization.h5" for future use and deployment.
 
@@ -52,3 +51,6 @@ The optimized model was saved and exported to an HDF5 file named "AlphabetSoupCh
 Overall, the deep learning model showed promising results in predicting the success of applicants funded by Alphabet Soup. However, achieving the target model performance may require further experimentation and optimization of hyperparameters. The current model achieved an accuracy of 73.01%, meeting the target threshold. Further optimization could involve fine-tuning hyperparameters, exploring different model architectures, and experimenting with feature engineering techniques.
 
 In conclusion, while the deep learning model shows promise, continued refinement and experimentation are recommended to improve performance further. Additionally, exploring alternative models and methodologies could provide additional insights and potentially improve model performance for predicting the success of funded applicants.
+
+## Limitations and Challenges
+Despite the efforts to optimize the model and achieve higher performance, challenges were encountered during the execution process. The attempt to run the optimized model (AlphabetSoupCharity_Optimization.ipynb) in Google Colab, even with the Pro version's additional compute resources, was unsuccessful. The session crashed due to memory constraints, indicating that the model's complexity or dataset size surpassed the available RAM capacity, despite the purchase of additional compute resources. I troubleshot the RAM issue but was still unable to view the results. 
